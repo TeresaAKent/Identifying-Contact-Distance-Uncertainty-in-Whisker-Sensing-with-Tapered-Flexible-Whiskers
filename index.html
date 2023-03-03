@@ -4,44 +4,44 @@
 
 <h1> Identifying Contact Distance Uncertainty in Whisker Sensing with Tapered, Flexible Whiskers <h1>
 <h2> Teresa A. Kent, Hannah Emnett, Mahnoush Babaei, Mitra J. Z. Hartmann, Sarah Bergbreiter <h2>
-
+<p>
 <b>Abstract-Whisker-based tactile sensors have the potential to perform fast and accurate 3D mappings of the environment, complementing vision-based methods under conditions of glare, reflection, proximity, and occlusion. Current algorithms for mapping with whiskers make assumptions about the conditions of contact, but these assumptions are not always valid and can cause significant sensing errors. Here we introduce a new whisker sensing system with a tapered, flexible whisker. The system provides inputs to two separate algorithms for estimating radial contact distance on a whisker. Using a Gradient-Moment (GM) algorithm, we correctly detect contact distance in most cases (within 4% of the whisker length). We introduce the Z-Dissimilarity score as a new metric that quantifies uncertainty in the radial contact distance estimate using both the GM algorithm and a Moment-Force (MF) algorithm that exploits the tapered whisker design. Combining the two algorithms ultimately results in contact distance estimates more robust than either algorithm alone.<b>
-
+<p>
 <body>
 Files Available-
 1. Code implementation of the tracking algorithm which converts a test video into a csv file of the motion of tracked points
 2. Code to preform analysis on the components of the sensor including
     * Output of predicted whisker bending from the quasistatic simulator developed at northwestern university in the Sense Lab
     * Analysis on the sensitivity of acrylic cut springs to forces produced by whisker bending
-
+<p><p>
 <i>Kent, T. A., Emnett, H., Babaei, M., Hartmann, M. J., & Bergbreiter, S. (2023). Identifying Contact Distance Uncertainty in Whisker Sensing with Tapered, Flexible Whiskers. International Conference on Robotics and Automation <i>
 
+<p>
+Any questions about this code can be directed to tkent@andrew.cmu.edu.  <p>
+If anyone would like a copy of the papers, video or data from this paper, the authors are happy to oblige a request by email. <p>
+-------------------------------------------------------------------------<p>
+To run this code you will need to download the following codes: <p>
+<p>
+Main.py <p>
+TrackerwIdentification.py <p>
+VideoOutputs.py<p>
+<p>
+In addition the following python libraries need to be installed on your machine:<p>
+numpy<p>
+OpenCV<p>
+matplotlib<p>
+skimage<p>
+random<p>
+----------------------------------------------------------------------------<p>
+The purpose of each of the author written codes is as follows:<p>
 
-Any questions about this code can be directed to tkent@andrew.cmu.edu.  
-If anyone would like a copy of the papers, video or data from this paper, the authors are happy to oblige a request by email. 
--------------------------------------------------------------------------
-To run this code you will need to download the following codes: 
-
-Main.py
-TrackerwIdentification.py
-VideoOutputs.py
-
-In addition the following python libraries need to be installed on your machine:
-numpy
-OpenCV
-matplotlib
-skimage
-random
-----------------------------------------------------------------------------
-The purpose of each of the author written codes is as follows:
-
-Main: A shorter code which is most user friendly.  This code is the one which should be run.  
-Simply change the videoPath line to the location of the input video.
-Then change the OutputFolder to your desired folder, the program is also capable of creating a new folder of specified name.
-
-TrackerwIdentification.py: Contained in this file are all of the functions used to take in a video file and output the location of all dots and whiskers in each frame.  This code also generates the location of all of the whiskers and their closest dots for later.
-
-VideoOutputs.py: This code creates output videos.  Three possible videos can be made although the main code only calls one of them.
-ArrowVisualization: Adds Arrows to the tracked dots which demonstrate their movement
-AlgorithmVisualization: Demonstrates the algorithms ability to predict the cause of deflections to the membrane and the whisker
+Main: A shorter code which is most user friendly.  This code is the one which should be run.  <p>
+Simply change the videoPath line to the location of the input video.<p>
+Then change the OutputFolder to your desired folder, the program is also capable of creating a new folder of specified name.<p>
+<p>
+TrackerwIdentification.py: Contained in this file are all of the functions used to take in a video file and output the location of all dots and whiskers in each frame.  This code also generates the location of all of the whiskers and their closest dots for later.<p>
+<p>
+VideoOutputs.py: This code creates output videos.  Three possible videos can be made although the main code only calls one of them. <p>
+ArrowVisualization: Adds Arrows to the tracked dots which demonstrate their movement <p>
+AlgorithmVisualization: Demonstrates the algorithms ability to predict the cause of deflections to the membrane and the whisker <p>
 TrackerVerification: Places numbered boxes around each of the tracked points for verification the tracker is working well.  The numbers are the same as those output in the excel file.
