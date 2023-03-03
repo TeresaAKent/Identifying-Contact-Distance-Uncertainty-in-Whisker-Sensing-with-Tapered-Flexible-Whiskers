@@ -24,28 +24,3 @@ Files Available- <p>
 Any questions about this code can be directed to tkent@andrew.cmu.edu.  <p>
 If anyone would like a copy of the papers, video or data from this paper, the authors are happy to oblige a request by email. <p>
 -------------------------------------------------------------------------<p>
-To run this code you will need to download the following codes: <p>
-<p>
-Main.py <p>
-TrackerwIdentification.py <p>
-VideoOutputs.py<p>
-<p>
-In addition the following python libraries need to be installed on your machine:<p>
-numpy<p>
-OpenCV<p>
-matplotlib<p>
-skimage<p>
-random<p>
-----------------------------------------------------------------------------<p>
-The purpose of each of the author written codes is as follows:<p>
-
-Main: A shorter code which is most user friendly.  This code is the one which should be run.  <p>
-Simply change the videoPath line to the location of the input video.<p>
-Then change the OutputFolder to your desired folder, the program is also capable of creating a new folder of specified name.<p>
-<p>
-TrackerwIdentification.py: Contained in this file are all of the functions used to take in a video file and output the location of all dots and whiskers in each frame.  This code also generates the location of all of the whiskers and their closest dots for later.<p>
-<p>
-VideoOutputs.py: This code creates output videos.  Three possible videos can be made although the main code only calls one of them. <p>
-ArrowVisualization: Adds Arrows to the tracked dots which demonstrate their movement <p>
-AlgorithmVisualization: Demonstrates the algorithms ability to predict the cause of deflections to the membrane and the whisker <p>
-TrackerVerification: Places numbered boxes around each of the tracked points for verification the tracker is working well.  The numbers are the same as those output in the excel file.
